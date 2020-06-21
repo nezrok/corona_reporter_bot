@@ -1,0 +1,12 @@
+---
+version: "3.4"
+
+services:
+  bot:
+    build: .
+    image: corona-reporter-bot:0.1
+    container_name: corona-reporter-bot-dev
+    restart: unless-stopped
+    volumes:
+      - "./data/data.db:/data/data.db:rw"
+      - "./config.ini:/config.ini:ro"
