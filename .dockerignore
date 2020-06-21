@@ -1,0 +1,6 @@
+assets
+data
+*.ini
+docker-compose.yml
+Dockerfile
+*.md

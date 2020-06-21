@@ -9,7 +9,7 @@ RUN apk upgrade --update-cache --available && apk add --update build-base python
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
 
-# Copy all other files files.
+# Copy all other files.
 COPY . .
 
 CMD ["python3", "./src/corona_reporter_bot.py"]

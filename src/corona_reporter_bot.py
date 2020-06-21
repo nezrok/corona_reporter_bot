@@ -130,9 +130,9 @@ class CoronaReporterBot():
         report_minute = self.reporter_start_time.minute
         update.message.reply_html(
           f"Hey {greeting}, danke für deine Anmeldung 🥳. Ich sende dir ab sofort täglich um "
-          f"{report_hour}:{report_minute:02} Uhr einen aktuellen Corona-Bericht für Freiburg "
-          f"und Baden-Württemberg. Wenn du die Berichte nicht mehr erhalten willst, tippe einfach "
-          f"/stop."
+          f"{report_hour}:{report_minute:02} Uhr einen Bericht mit den aktuellen Corona "
+          f"Infektions- und Todesfällen in Freiburg und Baden-Württemberg. Wenn du die Berichte "
+          f"nicht mehr erhalten willst, tippe einfach /stop."
         )
         self.log_event(f"Chat {our_chat} subscribed.", notify_admin=True)
 
